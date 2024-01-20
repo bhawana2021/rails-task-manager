@@ -1,0 +1,10 @@
+<h1>Edit Your Task </h1>
+<%= form_with model: @task do |f| %>
+  <%= f.label :titte %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.submit %>
+<% end %>
+
+<p><%= link_to 'back to list', list_path%></p>
